@@ -5,7 +5,7 @@ import java.time.LocalDateTime
 
 @Entity
 @Table(name = "users")
-class User (
+class User(
 
         @Id
         @Column(unique = true, nullable = false)
@@ -13,5 +13,4 @@ class User (
 
         @Column(nullable = false)
         val createdAt: LocalDateTime = LocalDateTime.now(),
-
-        )
+)

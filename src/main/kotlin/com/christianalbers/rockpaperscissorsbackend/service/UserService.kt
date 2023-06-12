@@ -11,4 +11,13 @@ class UserService(private val userRepository: userRepository) {
     fun getAllUsers(): List<User> {
         return userRepository.findAll()
     }
+
+    fun addNewUser(username: String) {
+        if(userRepository.findByUsername(username) != null) {
+            throw IllegalStateException("username is already taken.")
+        }
+
+        val newUser = User(username, LocalDateTime.now())
+        userRepository.save(newUser)
+    }
 }
