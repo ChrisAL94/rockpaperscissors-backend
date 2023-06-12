@@ -6,6 +6,7 @@ plugins {
     kotlin("jvm") version "1.8.21"
     kotlin("plugin.spring") version "1.8.21"
     kotlin("plugin.jpa") version "1.8.21"
+    application
 }
 
 group = "com.christianalbers"
@@ -34,4 +35,8 @@ tasks.withType<KotlinCompile> {
 
 tasks.withType<Test> {
     useJUnitPlatform()
+}
+
+application {
+    mainClass.set("com.christianalbers.rockpaperscissorsbackend.RockpaperscissorsBackendApplication")
 }

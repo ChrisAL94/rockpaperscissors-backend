@@ -15,6 +15,6 @@ class UserController(private val userService: UserService) {
 
     @PostMapping()
     fun registerNewUser(@RequestBody username: String) {
-        return userService.addNewUser(username)
+        userService.addNewUser(username)
     }
 }
