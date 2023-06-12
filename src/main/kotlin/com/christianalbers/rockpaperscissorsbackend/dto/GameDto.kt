@@ -9,6 +9,4 @@ import jakarta.persistence.ManyToOne
 data class GameDto(
         val user: User,
         val userSymbol: GameSymbol,
-        val computerSymbol: GameSymbol,
-        val result: GameSymbol,
 )
