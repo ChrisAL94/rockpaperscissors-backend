@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository
 import java.util.*
 
 @Repository
-public interface userRepository : JpaRepository<User, Long> {
+interface UserRepository : JpaRepository<User, Long> {
 
     @Query("SELECT u FROM User u WHERE u.username = ?1")
     fun findByUsername(username: String): User?

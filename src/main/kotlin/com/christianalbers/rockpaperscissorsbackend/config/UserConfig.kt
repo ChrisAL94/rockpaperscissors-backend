@@ -1,7 +1,7 @@
 package com.christianalbers.rockpaperscissorsbackend.config
 
 import com.christianalbers.rockpaperscissorsbackend.entity.User
-import com.christianalbers.rockpaperscissorsbackend.repository.userRepository
+import com.christianalbers.rockpaperscissorsbackend.repository.UserRepository
 import org.springframework.boot.CommandLineRunner
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
@@ -11,7 +11,7 @@ import java.time.LocalDateTime
 class UserConfig {
 
     @Bean
-    fun commandLineRunner(repository: userRepository): CommandLineRunner {
+    fun commandLineRunner(repository: UserRepository): CommandLineRunner {
         return CommandLineRunner { args ->
             val testUser1 = User("testUser1", LocalDateTime.now())
             val testUser2 = User("testUser2", LocalDateTime.now())

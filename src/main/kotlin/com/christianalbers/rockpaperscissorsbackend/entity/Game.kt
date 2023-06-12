@@ -1,5 +1,6 @@
 package com.christianalbers.rockpaperscissorsbackend.entity
 
+import com.christianalbers.rockpaperscissorsbackend.enums.GameSymbol
 import jakarta.persistence.*
 import java.time.LocalDateTime
 
@@ -16,13 +17,13 @@ class Game(
         val user: User,
 
         @Column(nullable = false)
-        val userSymbol: String,
+        val userSymbol: GameSymbol,
 
         @Column(nullable = false)
-        val computerSymbol: String,
+        val computerSymbol: GameSymbol,
 
         @Column(nullable = false)
-        val result: String,
+        val result: GameSymbol,
 
         @Column(nullable = false)
         val createdAt: LocalDateTime = LocalDateTime.now(),

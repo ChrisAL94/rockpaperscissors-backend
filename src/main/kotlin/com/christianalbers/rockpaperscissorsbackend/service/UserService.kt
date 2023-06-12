@@ -1,12 +1,11 @@
 package com.christianalbers.rockpaperscissorsbackend.service
 
 import com.christianalbers.rockpaperscissorsbackend.entity.User
-import com.christianalbers.rockpaperscissorsbackend.repository.userRepository
+import com.christianalbers.rockpaperscissorsbackend.repository.UserRepository
 import org.springframework.stereotype.Service
-import java.time.LocalDateTime
 
 @Service
-class UserService(private val userRepository: userRepository) {
+class UserService(private val userRepository: UserRepository) {
 
     fun getAllUsers(): List<User> {
         return userRepository.findAll()
