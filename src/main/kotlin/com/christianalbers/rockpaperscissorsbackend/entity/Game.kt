@@ -1,5 +1,6 @@
 package com.christianalbers.rockpaperscissorsbackend.entity
 
+import com.christianalbers.rockpaperscissorsbackend.enums.GameResult
 import com.christianalbers.rockpaperscissorsbackend.enums.GameSymbol
 import jakarta.persistence.*
 import java.time.LocalDateTime
@@ -7,10 +8,6 @@ import java.time.LocalDateTime
 @Entity
 @Table(name = "games")
 class Game(
-
-        @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
-        val gameId: Long = 0,
 
         @ManyToOne
         @JoinColumn(name = "user_id", nullable = false)
@@ -23,8 +20,12 @@ class Game(
         val computerSymbol: GameSymbol,
 
         @Column(nullable = false)
-        val result: GameSymbol,
+        val result: GameResult,
 
         @Column(nullable = false)
         val createdAt: LocalDateTime = LocalDateTime.now(),
+
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        val gameId: Long = 0,
 )
