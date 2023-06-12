@@ -1,7 +1,6 @@
 package com.christianalbers.rockpaperscissorsbackend.controller
 
 import com.christianalbers.rockpaperscissorsbackend.dto.GameDto
-import com.christianalbers.rockpaperscissorsbackend.entity.Game
 import com.christianalbers.rockpaperscissorsbackend.service.GameService
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestMapping

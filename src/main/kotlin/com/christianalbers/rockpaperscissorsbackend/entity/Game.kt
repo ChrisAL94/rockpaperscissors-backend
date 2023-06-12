@@ -9,7 +9,7 @@ import java.time.LocalDateTime
 @Table(name = "games")
 class Game(
 
-        @ManyToOne
+        @ManyToOne(fetch = FetchType.EAGER, cascade=[CascadeType.ALL])
         @JoinColumn(name = "user_id", nullable = false)
         val user: User,
 
