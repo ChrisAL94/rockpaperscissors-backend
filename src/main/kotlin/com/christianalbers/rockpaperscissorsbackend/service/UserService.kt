@@ -17,7 +17,7 @@ class UserService(private val userRepository: userRepository) {
             throw IllegalStateException("username is already taken.")
         }
 
-        val newUser = User(username, LocalDateTime.now())
+        val newUser = User(username)
         userRepository.save(newUser)
     }
 }

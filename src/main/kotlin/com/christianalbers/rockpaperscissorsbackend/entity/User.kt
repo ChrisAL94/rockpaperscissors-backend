@@ -14,14 +14,6 @@ class User(
         val createdAt: LocalDateTime = LocalDateTime.now(),
 
         @Id
-        @SequenceGenerator(
-                name = "user_sequence",
-                sequenceName = "user_sequence",
-                allocationSize = 1,
-        )
-        @GeneratedValue(
-                strategy = GenerationType.SEQUENCE,
-                generator = "user_sequence",
-        )
-        val id: Long = 0,
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        val userId: Long = 0,
 )
