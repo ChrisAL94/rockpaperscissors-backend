@@ -11,8 +11,8 @@ import org.springframework.stereotype.Service
 @Service
 class UserService(private val userRepository: UserRepository) {
 
-    fun getAllUsers(): List<User> {
-        return userRepository.findAll()
+    fun getAllUsers(): List<String> {
+        return userRepository.findAll().map { it.username }
     }
 
     fun addNewUser(username: String) {

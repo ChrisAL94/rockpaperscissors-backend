@@ -9,11 +9,13 @@ import org.springframework.web.bind.annotation.*
 @RequestMapping(path=["api/v1/user"])
 class UserController(private val userService: UserService) {
 
+    @CrossOrigin(origins = ["http://localhost:4200"])
     @GetMapping()
-    fun getAllUsers(): List<User> {
+    fun getAllUsers(): List<String> {
         return userService.getAllUsers()
     }
 
+    @CrossOrigin(origins = ["http://localhost:4200"])
     @PostMapping()
     fun registerNewUser(@RequestBody username: String) {
         userService.addNewUser(username)
