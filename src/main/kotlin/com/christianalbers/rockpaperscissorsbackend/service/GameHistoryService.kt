@@ -4,11 +4,13 @@ import com.christianalbers.rockpaperscissorsbackend.dto.GameHistoryDto
 import com.christianalbers.rockpaperscissorsbackend.entity.Game
 import com.christianalbers.rockpaperscissorsbackend.enums.GameResult
 import com.christianalbers.rockpaperscissorsbackend.repository.GameRepository
-import com.christianalbers.rockpaperscissorsbackend.repository.UserRepository
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Service
 
 @Service
-class GameHistoryService(private val userRepository: UserRepository, private val gameRepository: GameRepository) {
+class GameHistoryService(private val gameRepository: GameRepository) {
+    val logger: Logger = LoggerFactory.getLogger(this::class.java)
 
     fun getGameHistoryByUsername(username: String): GameHistoryDto {
         val userGameList: List<Game>? = gameRepository.findByUsername(username)
@@ -19,6 +21,9 @@ class GameHistoryService(private val userRepository: UserRepository, private val
     fun getAllUsersGameHistory(): Array<GameHistoryDto> {
         var userGameHistoryArray = arrayOf<GameHistoryDto>()
         val userList = gameRepository.findAllUsernames()
+        if (userList != null) {
+            logger.warn("No user history persisted yet.")
+        }
         userList?.forEach {
             val gameHistoryByUserName = getGameHistoryByUsername(it)
             userGameHistoryArray = userGameHistoryArray.plus(gameHistoryByUserName)

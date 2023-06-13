@@ -1,7 +1,5 @@
 package com.christianalbers.rockpaperscissorsbackend.controller
 
-import com.christianalbers.rockpaperscissorsbackend.dto.GameHistoryDto
-import com.christianalbers.rockpaperscissorsbackend.entity.User
 import com.christianalbers.rockpaperscissorsbackend.service.UserService
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory

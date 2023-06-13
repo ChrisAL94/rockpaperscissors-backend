@@ -2,7 +2,6 @@ package com.christianalbers.rockpaperscissorsbackend.controller
 
 import com.christianalbers.rockpaperscissorsbackend.dto.GameDto
 import com.christianalbers.rockpaperscissorsbackend.dto.GameResultDTO
-import com.christianalbers.rockpaperscissorsbackend.enums.GameSymbol
 import com.christianalbers.rockpaperscissorsbackend.service.GameService
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory

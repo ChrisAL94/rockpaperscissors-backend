@@ -3,26 +3,28 @@ package com.christianalbers.rockpaperscissorsbackend.service
 import com.christianalbers.rockpaperscissorsbackend.dto.GameDto
 import com.christianalbers.rockpaperscissorsbackend.dto.GameResultDTO
 import com.christianalbers.rockpaperscissorsbackend.entity.Game
-import com.christianalbers.rockpaperscissorsbackend.entity.User
 import com.christianalbers.rockpaperscissorsbackend.enums.GameResult
 import com.christianalbers.rockpaperscissorsbackend.enums.GameSymbol
 import com.christianalbers.rockpaperscissorsbackend.repository.GameRepository
 import com.christianalbers.rockpaperscissorsbackend.repository.UserRepository
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Service
 import java.time.LocalDateTime
 
 @Service
 class GameService(private val gameRepository: GameRepository, private val userRepository: UserRepository) {
-
-    fun getAllGames(): List<Game> {
-        return gameRepository.findAll()
-    }
+    val logger: Logger = LoggerFactory.getLogger(this::class.java)
 
     fun playGame(gameDto: GameDto): GameResultDTO {
-        val gameResult = this.determineWinner(GameSymbol.valueOf(gameDto.userSymbol))
         val user = userRepository.findByUsername(gameDto.username)
-                ?: throw IllegalStateException("There is no user under this username")
+        if (user == null) {
+            logger.warn("User ${gameDto.username} is unknown. Game can not be persisted")
+            throw IllegalStateException("There is no user under this username ${gameDto.username}")
+        }
+        val gameResult = this.determineWinner(GameSymbol.valueOf(gameDto.userSymbol))
         gameRepository.save(Game(user, GameSymbol.valueOf(gameDto.userSymbol), gameResult.computerSymbol, gameResult.result, LocalDateTime.now()))
+        logger.trace("Game successful persisted.")
         return GameResultDTO(gameResult.result, gameResult.computerSymbol)
     }
 
@@ -33,6 +35,7 @@ class GameService(private val gameRepository: GameRepository, private val userRe
             userChoice == GameSymbol.ROCK && computerChoice == GameSymbol.SCISSORS ||
                     userChoice == GameSymbol.PAPER && computerChoice == GameSymbol.ROCK ||
                     userChoice == GameSymbol.SCISSORS && computerChoice == GameSymbol.PAPER -> GameResult.WIN
+
             else -> GameResult.DEFEAT
         }
 
