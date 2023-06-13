@@ -11,4 +11,7 @@ interface GameRepository : JpaRepository<Game, Long> {
 
     @Query("SELECT g FROM Game g WHERE g.user.username = ?1")
     fun findByUsername(username: String): List<Game>?
+
+    @Query("SELECT DISTINCT g.user.username FROM Game g")
+    fun findAllUsernames(): List<String>?
 }
