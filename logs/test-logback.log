@@ -72,3 +72,27 @@
 4849 [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Started RockpaperscissorsBackendApplicationKt in 4.69 seconds (process running for 5.167)
 7358 [http-nio-8080-exec-1] TRACE c.c.r.c.GameHistoryController - Game history for testUser12 is requested
 7400 [http-nio-8080-exec-1] WARN  c.c.r.service.GameHistoryService - No Games persisted for user testUser12
+444  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Starting RockpaperscissorsBackendApplicationKt using Java 17.0.7 with PID 21562 (/Users/Guest/IdeaProjects/rockpaperscissors-backend/build/classes/kotlin/main started by Guest in /Users/Guest/IdeaProjects/rockpaperscissors-backend)
+447  [main] DEBUG c.c.r.RockpaperscissorsBackendApplicationKt - Running with Spring Boot v3.1.0, Spring v6.0.9
+448  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - No active profile set, falling back to 1 default profile: "default"
+4104 [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Started RockpaperscissorsBackendApplicationKt in 3.991 seconds (process running for 4.497)
+18901 [http-nio-8080-exec-1] TRACE c.c.r.controller.UserController - Registered users are requested
+24068 [http-nio-8080-exec-2] TRACE c.c.r.controller.GameController - Game endpoint is accessed by testUser1 with symbol PAPER
+24094 [http-nio-8080-exec-2] TRACE c.c.r.service.GameService - Game successful persisted.
+29013 [http-nio-8080-exec-4] TRACE c.c.r.c.GameHistoryController - Game history for all users is requested
+29015 [http-nio-8080-exec-3] TRACE c.c.r.c.GameHistoryController - Game history for testUser1 is requested
+32968 [http-nio-8080-exec-5] TRACE c.c.r.controller.UserController - Registered users are requested
+40538 [http-nio-8080-exec-6] TRACE c.c.r.c.GameHistoryController - Game history for all users is requested
+40538 [http-nio-8080-exec-7] TRACE c.c.r.c.GameHistoryController - Game history for undefined is requested
+40542 [http-nio-8080-exec-7] WARN  c.c.r.service.GameHistoryService - No Games persisted for user undefined
+52256 [http-nio-8080-exec-8] TRACE c.c.r.controller.GameController - Game endpoint is accessed by undefined with symbol ROCK
+52259 [http-nio-8080-exec-8] WARN  c.c.r.service.GameService - User undefined is unknown. Game can not be persisted
+63778 [http-nio-8080-exec-9] TRACE c.c.r.controller.UserController - Registered users are requested
+952  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Starting RockpaperscissorsBackendApplicationKt using Java 17.0.7 with PID 21618 (/Users/Guest/IdeaProjects/rockpaperscissors-backend/build/classes/kotlin/main started by Guest in /Users/Guest/IdeaProjects/rockpaperscissors-backend)
+957  [main] DEBUG c.c.r.RockpaperscissorsBackendApplicationKt - Running with Spring Boot v3.1.0, Spring v6.0.9
+959  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - No active profile set, falling back to 1 default profile: "default"
+4765 [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Started RockpaperscissorsBackendApplicationKt in 4.619 seconds (process running for 5.11)
+13107 [http-nio-8080-exec-1] TRACE c.c.r.controller.GameController - Game endpoint is accessed by undefined with symbol ROCK
+13148 [http-nio-8080-exec-1] WARN  c.c.r.service.GameService - User undefined is unknown. Game can not be persisted
+18540 [http-nio-8080-exec-2] TRACE c.c.r.controller.GameController - Game endpoint is accessed by undefined with symbol PAPER
+18544 [http-nio-8080-exec-2] WARN  c.c.r.service.GameService - User undefined is unknown. Game can not be persisted

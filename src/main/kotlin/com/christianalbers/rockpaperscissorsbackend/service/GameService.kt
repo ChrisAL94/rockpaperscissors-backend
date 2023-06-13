@@ -17,12 +17,12 @@ class GameService(private val gameRepository: GameRepository, private val userRe
     val logger: Logger = LoggerFactory.getLogger(this::class.java)
 
     fun playGame(gameDto: GameDto): GameResultDTO {
+        val gameResult = this.determineWinner(GameSymbol.valueOf(gameDto.userSymbol))
         val user = userRepository.findByUsername(gameDto.username)
         if (user == null) {
             logger.warn("User ${gameDto.username} is unknown. Game can not be persisted")
-            throw IllegalStateException("There is no user under this username ${gameDto.username}")
+            return GameResultDTO(gameResult.result, gameResult.computerSymbol)
         }
-        val gameResult = this.determineWinner(GameSymbol.valueOf(gameDto.userSymbol))
         gameRepository.save(Game(user, GameSymbol.valueOf(gameDto.userSymbol), gameResult.computerSymbol, gameResult.result, LocalDateTime.now()))
         logger.trace("Game successful persisted.")
         return GameResultDTO(gameResult.result, gameResult.computerSymbol)
