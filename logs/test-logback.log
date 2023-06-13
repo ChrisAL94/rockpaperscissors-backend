@@ -96,3 +96,76 @@
 13148 [http-nio-8080-exec-1] WARN  c.c.r.service.GameService - User undefined is unknown. Game can not be persisted
 18540 [http-nio-8080-exec-2] TRACE c.c.r.controller.GameController - Game endpoint is accessed by undefined with symbol PAPER
 18544 [http-nio-8080-exec-2] WARN  c.c.r.service.GameService - User undefined is unknown. Game can not be persisted
+449  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Starting RockpaperscissorsBackendApplicationKt using Java 17.0.7 with PID 21746 (/Users/Guest/IdeaProjects/rockpaperscissors-backend/build/classes/kotlin/main started by Guest in /Users/Guest/IdeaProjects/rockpaperscissors-backend)
+452  [main] DEBUG c.c.r.RockpaperscissorsBackendApplicationKt - Running with Spring Boot v3.1.0, Spring v6.0.9
+453  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - No active profile set, falling back to 1 default profile: "default"
+3683 [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Started RockpaperscissorsBackendApplicationKt in 3.587 seconds (process running for 4.036)
+1207 [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Starting RockpaperscissorsBackendApplicationKt using Java 17.0.7 with PID 22420 (/Users/Guest/IdeaProjects/rockpaperscissors-backend/build/classes/kotlin/main started by Guest in /Users/Guest/IdeaProjects/rockpaperscissors-backend)
+1211 [main] DEBUG c.c.r.RockpaperscissorsBackendApplicationKt - Running with Spring Boot v3.1.0, Spring v6.0.9
+1212 [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - No active profile set, falling back to 1 default profile: "default"
+5848 [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Started RockpaperscissorsBackendApplicationKt in 5.635 seconds (process running for 6.491)
+120883 [http-nio-8080-exec-4] TRACE c.c.r.controller.UserController - testUser9 access registration endpoint
+120940 [http-nio-8080-exec-4] TRACE c.c.r.service.UserService - User testUser9 successfully created.
+122196 [http-nio-8080-exec-5] TRACE c.c.r.controller.UserController - testUser9 access registration endpoint
+122201 [http-nio-8080-exec-5] ERROR c.c.r.service.UserService - There already exist a user testUser9. Registration process aborted.
+122876 [http-nio-8080-exec-6] TRACE c.c.r.controller.UserController - testUser9 access registration endpoint
+122881 [http-nio-8080-exec-6] ERROR c.c.r.service.UserService - There already exist a user testUser9. Registration process aborted.
+127322 [http-nio-8080-exec-7] TRACE c.c.r.controller.UserController - testUser10 access registration endpoint
+127327 [http-nio-8080-exec-7] TRACE c.c.r.service.UserService - User testUser10 successfully created.
+129320 [http-nio-8080-exec-8] TRACE c.c.r.controller.UserController - Registered users are requested
+129921 [http-nio-8080-exec-9] TRACE c.c.r.controller.UserController - Registered users are requested
+130698 [http-nio-8080-exec-10] TRACE c.c.r.controller.UserController - Registered users are requested
+480935 [http-nio-8080-exec-5] TRACE c.c.r.controller.UserController - Registered users are requested
+488395 [http-nio-8080-exec-6] TRACE c.c.r.controller.UserController - Schlari access registration endpoint
+488403 [http-nio-8080-exec-6] TRACE c.c.r.service.UserService - User Schlari successfully created.
+490708 [http-nio-8080-exec-7] TRACE c.c.r.controller.GameController - Game endpoint is accessed by Schlari with symbol ROCK
+490719 [http-nio-8080-exec-7] TRACE c.c.r.service.GameService - Game successful persisted.
+497203 [http-nio-8080-exec-8] TRACE c.c.r.controller.GameController - Game endpoint is accessed by Schlari with symbol PAPER
+497210 [http-nio-8080-exec-8] TRACE c.c.r.service.GameService - Game successful persisted.
+501373 [http-nio-8080-exec-9] TRACE c.c.r.controller.GameController - Game endpoint is accessed by Schlari with symbol SCISSORS
+501380 [http-nio-8080-exec-9] TRACE c.c.r.service.GameService - Game successful persisted.
+504497 [http-nio-8080-exec-1] TRACE c.c.r.c.GameHistoryController - Game history for all users is requested
+504499 [http-nio-8080-exec-10] TRACE c.c.r.c.GameHistoryController - Game history for Schlari is requested
+514220 [http-nio-8080-exec-2] TRACE c.c.r.controller.UserController - Registered users are requested
+518993 [http-nio-8080-exec-3] TRACE c.c.r.controller.UserController - schlari access registration endpoint
+519000 [http-nio-8080-exec-3] TRACE c.c.r.service.UserService - User schlari successfully created.
+521153 [http-nio-8080-exec-4] TRACE c.c.r.c.GameHistoryController - Game history for schlari is requested
+521153 [http-nio-8080-exec-5] TRACE c.c.r.c.GameHistoryController - Game history for all users is requested
+521156 [http-nio-8080-exec-4] WARN  c.c.r.service.GameHistoryService - No Games persisted for user schlari
+523908 [http-nio-8080-exec-6] TRACE c.c.r.controller.UserController - Registered users are requested
+529968 [http-nio-8080-exec-7] TRACE c.c.r.controller.UserController - schlari access registration endpoint
+529972 [http-nio-8080-exec-7] ERROR c.c.r.service.UserService - There already exist a user schlari. Registration process aborted.
+534415 [http-nio-8080-exec-8] TRACE c.c.r.controller.UserController - Registered users are requested
+550792 [http-nio-8080-exec-9] TRACE c.c.r.controller.UserController - Registered users are requested
+559419 [http-nio-8080-exec-10] TRACE c.c.r.controller.GameController - Game endpoint is accessed by Schlari with symbol ROCK
+559427 [http-nio-8080-exec-10] TRACE c.c.r.service.GameService - Game successful persisted.
+562071 [http-nio-8080-exec-1] TRACE c.c.r.controller.GameController - Game endpoint is accessed by Schlari with symbol SCISSORS
+562077 [http-nio-8080-exec-1] TRACE c.c.r.service.GameService - Game successful persisted.
+565720 [http-nio-8080-exec-2] TRACE c.c.r.c.GameHistoryController - Game history for Schlari is requested
+565721 [http-nio-8080-exec-3] TRACE c.c.r.c.GameHistoryController - Game history for all users is requested
+957  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Starting RockpaperscissorsBackendApplicationKt using Java 17.0.7 with PID 22725 (/Users/Guest/IdeaProjects/rockpaperscissors-backend/build/classes/kotlin/main started by Guest in /Users/Guest/IdeaProjects/rockpaperscissors-backend)
+961  [main] DEBUG c.c.r.RockpaperscissorsBackendApplicationKt - Running with Spring Boot v3.1.0, Spring v6.0.9
+962  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - No active profile set, falling back to 1 default profile: "default"
+5450 [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Started RockpaperscissorsBackendApplicationKt in 5.298 seconds (process running for 5.784)
+1284 [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Starting RockpaperscissorsBackendApplicationKt using Java 17.0.7 with PID 24215 (/Users/Guest/IdeaProjects/rockpaperscissors-backend/build/classes/kotlin/main started by Guest in /Users/Guest/IdeaProjects/rockpaperscissors-backend)
+1287 [main] DEBUG c.c.r.RockpaperscissorsBackendApplicationKt - Running with Spring Boot v3.1.0, Spring v6.0.9
+1288 [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - No active profile set, falling back to 1 default profile: "default"
+5644 [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Started RockpaperscissorsBackendApplicationKt in 5.196 seconds (process running for 6.197)
+29223 [http-nio-8080-exec-2] TRACE c.c.r.controller.UserController - Registered users are requested
+29974 [http-nio-8080-exec-3] TRACE c.c.r.controller.UserController - Registered users are requested
+31722 [http-nio-8080-exec-4] TRACE c.c.r.controller.UserController - testUser10 access registration endpoint
+31744 [http-nio-8080-exec-4] TRACE c.c.r.service.UserService - User testUser10 successfully created.
+32201 [http-nio-8080-exec-5] TRACE c.c.r.controller.UserController - testUser10 access registration endpoint
+32205 [http-nio-8080-exec-5] ERROR c.c.r.service.UserService - There already exist a user testUser10. Registration process aborted.
+34202 [http-nio-8080-exec-6] TRACE c.c.r.controller.GameController - Game endpoint is accessed by testUser1 with symbol ROCK
+34211 [http-nio-8080-exec-6] TRACE c.c.r.service.GameService - Game successful persisted.
+34901 [http-nio-8080-exec-7] TRACE c.c.r.controller.GameController - Game endpoint is accessed by testUser1 with symbol ROCK
+34905 [http-nio-8080-exec-7] TRACE c.c.r.service.GameService - Game successful persisted.
+613  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Starting RockpaperscissorsBackendApplicationKt using Java 17.0.7 with PID 24300 (/Users/Guest/IdeaProjects/rockpaperscissors-backend/build/classes/kotlin/main started by Guest in /Users/Guest/IdeaProjects/rockpaperscissors-backend)
+616  [main] DEBUG c.c.r.RockpaperscissorsBackendApplicationKt - Running with Spring Boot v3.1.0, Spring v6.0.9
+617  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - No active profile set, falling back to 1 default profile: "default"
+5082 [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Started RockpaperscissorsBackendApplicationKt in 4.957 seconds (process running for 5.509)
+481  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Starting RockpaperscissorsBackendApplicationKt using Java 17.0.7 with PID 24333 (/Users/Guest/IdeaProjects/rockpaperscissors-backend/build/classes/kotlin/main started by Guest in /Users/Guest/IdeaProjects/rockpaperscissors-backend)
+483  [main] DEBUG c.c.r.RockpaperscissorsBackendApplicationKt - Running with Spring Boot v3.1.0, Spring v6.0.9
+484  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - No active profile set, falling back to 1 default profile: "default"
+4894 [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Started RockpaperscissorsBackendApplicationKt in 4.798 seconds (process running for 5.256)
