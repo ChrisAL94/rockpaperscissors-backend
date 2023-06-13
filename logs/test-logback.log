@@ -169,3 +169,23 @@
 483  [main] DEBUG c.c.r.RockpaperscissorsBackendApplicationKt - Running with Spring Boot v3.1.0, Spring v6.0.9
 484  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - No active profile set, falling back to 1 default profile: "default"
 4894 [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Started RockpaperscissorsBackendApplicationKt in 4.798 seconds (process running for 5.256)
+854  [Test worker] INFO  c.c.r.repository.UserRepositoryTest - Starting UserRepositoryTest using Java 17.0.7 with PID 24983 (started by Guest in /Users/Guest/IdeaProjects/rockpaperscissors-backend)
+856  [Test worker] DEBUG c.c.r.repository.UserRepositoryTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+857  [Test worker] INFO  c.c.r.repository.UserRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+4644 [Test worker] INFO  c.c.r.repository.UserRepositoryTest - Started UserRepositoryTest in 4.212 seconds (process running for 5.457)
+659  [Test worker] INFO  c.c.r.repository.UserRepositoryTest - Starting UserRepositoryTest using Java 17.0.7 with PID 25035 (started by Guest in /Users/Guest/IdeaProjects/rockpaperscissors-backend)
+661  [Test worker] DEBUG c.c.r.repository.UserRepositoryTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+664  [Test worker] INFO  c.c.r.repository.UserRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+6082 [Test worker] INFO  c.c.r.repository.UserRepositoryTest - Started UserRepositoryTest in 5.775 seconds (process running for 6.814)
+810  [Test worker] INFO  c.c.r.repository.UserRepositoryTest - Starting UserRepositoryTest using Java 17.0.7 with PID 25067 (started by Guest in /Users/Guest/IdeaProjects/rockpaperscissors-backend)
+811  [Test worker] DEBUG c.c.r.repository.UserRepositoryTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+813  [Test worker] INFO  c.c.r.repository.UserRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+3664 [Test worker] INFO  c.c.r.repository.UserRepositoryTest - Started UserRepositoryTest in 3.254 seconds (process running for 4.755)
+824  [Test worker] INFO  c.c.r.repository.UserRepositoryTest - Starting UserRepositoryTest using Java 17.0.7 with PID 25466 (started by Guest in /Users/Guest/IdeaProjects/rockpaperscissors-backend)
+826  [Test worker] DEBUG c.c.r.repository.UserRepositoryTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+827  [Test worker] INFO  c.c.r.repository.UserRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+4344 [Test worker] INFO  c.c.r.repository.UserRepositoryTest - Started UserRepositoryTest in 3.954 seconds (process running for 5.111)
+567  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Starting RockpaperscissorsBackendApplicationKt using Java 17.0.7 with PID 25789 (/Users/Guest/IdeaProjects/rockpaperscissors-backend/build/classes/kotlin/main started by Guest in /Users/Guest/IdeaProjects/rockpaperscissors-backend)
+570  [main] DEBUG c.c.r.RockpaperscissorsBackendApplicationKt - Running with Spring Boot v3.1.0, Spring v6.0.9
+570  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - No active profile set, falling back to 1 default profile: "default"
+5055 [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Started RockpaperscissorsBackendApplicationKt in 4.931 seconds (process running for 5.509)
