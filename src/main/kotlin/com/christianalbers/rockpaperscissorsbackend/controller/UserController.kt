@@ -18,14 +18,4 @@ class UserController(private val userService: UserService) {
     fun registerNewUser(@RequestBody username: String) {
         userService.addNewUser(username)
     }
-
-    @GetMapping("userGameHistory")
-    fun getUserGameHistory(@RequestBody username: String): GameHistoryDto {
-        return userService.getGameHistoryByUsername(username)
-    }
-
-    @GetMapping("gameHistories")
-    fun getAllUsersGameHistory(): Array<GameHistoryDto> {
-        return userService.getAllUsersGameHistory()
-    }
 }
