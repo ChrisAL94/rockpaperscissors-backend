@@ -26,6 +26,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("io.micrometer:micrometer-registry-prometheus")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
+    implementation("org.springframework.boot:spring-boot-gradle-plugin:3.1.0")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
@@ -41,5 +42,5 @@ tasks.withType<Test> {
 }
 
 application {
-    mainClass.set("com.christianalbers.rockpaperscissorsbackend.RockpaperscissorsBackendApplication")
+    mainClass.set("com.christianalbers.rockpaperscissorsbackend.RockpaperscissorsBackendApplicationKt")
 }
