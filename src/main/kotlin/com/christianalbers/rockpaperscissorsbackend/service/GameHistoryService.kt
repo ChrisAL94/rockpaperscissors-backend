@@ -20,7 +20,8 @@ class GameHistoryService(private val userRepository: UserRepository, private val
         var userGameHistoryArray = arrayOf<GameHistoryDto>()
         val userList = gameRepository.findAllUsernames()
         userList?.forEach {
-            userGameHistoryArray.plus(getGameHistoryByUsername(it))
+            val gameHistoryByUserName = getGameHistoryByUsername(it)
+            userGameHistoryArray = userGameHistoryArray.plus(gameHistoryByUserName)
         }
         return userGameHistoryArray
     }
