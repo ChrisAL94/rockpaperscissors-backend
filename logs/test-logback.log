@@ -1,0 +1,10 @@
+517  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Starting RockpaperscissorsBackendApplicationKt using Java 17.0.7 with PID 21160 (/Users/Guest/IdeaProjects/rockpaperscissors-backend/build/classes/kotlin/main started by Guest in /Users/Guest/IdeaProjects/rockpaperscissors-backend)
+520  [main] DEBUG c.c.r.RockpaperscissorsBackendApplicationKt - Running with Spring Boot v3.1.0, Spring v6.0.9
+521  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - No active profile set, falling back to 1 default profile: "default"
+4113 [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Started RockpaperscissorsBackendApplicationKt in 3.992 seconds (process running for 4.48)
+6193 [http-nio-8080-exec-1] TRACE c.c.r.controller.GameController - Game endpoint is accessed by testUser1 with symbol ROCK
+7138 [http-nio-8080-exec-2] TRACE c.c.r.controller.GameController - Game endpoint is accessed by testUser1 with symbol ROCK
+9402 [http-nio-8080-exec-3] TRACE c.c.r.controller.UserController - testUser9 access registration endpoint
+10346 [http-nio-8080-exec-4] TRACE c.c.r.controller.UserController - testUser9 access registration endpoint
+12381 [http-nio-8080-exec-5] TRACE c.c.r.controller.UserController - Registered users are requested
+13133 [http-nio-8080-exec-6] TRACE c.c.r.controller.UserController - Registered users are requested
