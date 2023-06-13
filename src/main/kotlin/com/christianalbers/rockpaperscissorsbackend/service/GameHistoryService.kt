@@ -14,6 +14,10 @@ class GameHistoryService(private val gameRepository: GameRepository) {
 
     fun getGameHistoryByUsername(username: String): GameHistoryDto {
         val userGameList: List<Game>? = gameRepository.findByUsername(username)
+        if (userGameList.isNullOrEmpty()) {
+            logger.warn("No Games persisted for user $username")
+            throw IllegalStateException("There is no user under this username $username or there where no games played yet.")
+        }
         return generateUserGameHistory(userGameList, username)
     }
 
@@ -21,7 +25,7 @@ class GameHistoryService(private val gameRepository: GameRepository) {
     fun getAllUsersGameHistory(): Array<GameHistoryDto> {
         var userGameHistoryArray = arrayOf<GameHistoryDto>()
         val userList = gameRepository.findAllUsernames()
-        if (userList != null) {
+        if (userList == null) {
             logger.warn("No user history persisted yet.")
         }
         userList?.forEach {
