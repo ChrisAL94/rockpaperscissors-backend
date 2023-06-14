@@ -246,3 +246,9 @@
 714  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Starting RockpaperscissorsBackendApplicationKt v0.0.1-SNAPSHOT using Java 20.0.1 with PID 78426 (/Users/c01094/Dev/Privat/rockpaperscissors-backend/build/libs/rockpaperscissors-backend-0.0.1-SNAPSHOT.jar started by c01094 in /Users/c01094/Dev/Privat/rockpaperscissors-backend)
 716  [main] DEBUG c.c.r.RockpaperscissorsBackendApplicationKt - Running with Spring Boot v3.1.0, Spring v6.0.9
 716  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - No active profile set, falling back to 1 default profile: "default"
+952  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Starting RockpaperscissorsBackendApplicationKt v0.0.1-SNAPSHOT using Java 17 with PID 24738 (/Users/c01094/Dev/Privat/rockpaperscissors-backend/build/libs/rockpaperscissors-backend-0.0.1-SNAPSHOT.jar started by c01094 in /Users/c01094/Dev/Privat/rockpaperscissors-backend)
+954  [main] DEBUG c.c.r.RockpaperscissorsBackendApplicationKt - Running with Spring Boot v3.1.0, Spring v6.0.9
+954  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - No active profile set, falling back to 1 default profile: "default"
+709  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Starting RockpaperscissorsBackendApplicationKt v0.0.1-SNAPSHOT using Java 17 with PID 24870 (/Users/c01094/Dev/Privat/rockpaperscissors-backend/build/libs/rockpaperscissors-backend-0.0.1-SNAPSHOT.jar started by c01094 in /Users/c01094/Dev/Privat/rockpaperscissors-backend)
+711  [main] DEBUG c.c.r.RockpaperscissorsBackendApplicationKt - Running with Spring Boot v3.1.0, Spring v6.0.9
+712  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - No active profile set, falling back to 1 default profile: "default"
