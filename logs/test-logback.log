@@ -252,3 +252,30 @@
 709  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - Starting RockpaperscissorsBackendApplicationKt v0.0.1-SNAPSHOT using Java 17 with PID 24870 (/Users/c01094/Dev/Privat/rockpaperscissors-backend/build/libs/rockpaperscissors-backend-0.0.1-SNAPSHOT.jar started by c01094 in /Users/c01094/Dev/Privat/rockpaperscissors-backend)
 711  [main] DEBUG c.c.r.RockpaperscissorsBackendApplicationKt - Running with Spring Boot v3.1.0, Spring v6.0.9
 712  [main] INFO  c.c.r.RockpaperscissorsBackendApplicationKt - No active profile set, falling back to 1 default profile: "default"
+1176 [Test worker] INFO  c.c.r.RockpaperscissorsBackendApplicationTests - Starting RockpaperscissorsBackendApplicationTests using Java 17.0.6 with PID 7901 (started by albi29091994 in /home/albi29091994/rockpaperscissors-backend)
+1183 [Test worker] DEBUG c.c.r.RockpaperscissorsBackendApplicationTests - Running with Spring Boot v3.1.0, Spring v6.0.9
+1187 [Test worker] INFO  c.c.r.RockpaperscissorsBackendApplicationTests - No active profile set, falling back to 1 default profile: "default"
+7965 [Test worker] INFO  c.c.r.repository.UserRepositoryTest - Starting UserRepositoryTest using Java 17.0.6 with PID 7901 (started by albi29091994 in /home/albi29091994/rockpaperscissors-backend)
+7965 [Test worker] DEBUG c.c.r.repository.UserRepositoryTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+7966 [Test worker] INFO  c.c.r.repository.UserRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+10220 [Test worker] INFO  c.c.r.repository.UserRepositoryTest - Started UserRepositoryTest in 2.377 seconds (process running for 11.724)
+11906 [Test worker] ERROR c.c.r.service.UserService - There already exist a user testUser. Registration process aborted.
+11941 [Test worker] TRACE c.c.r.service.UserService - User testUser successfully created.
+1201 [Test worker] INFO  c.c.r.RockpaperscissorsBackendApplicationTests - Starting RockpaperscissorsBackendApplicationTests using Java 17.0.6 with PID 8487 (started by albi29091994 in /home/albi29091994/rockpaperscissors-backend)
+1203 [Test worker] DEBUG c.c.r.RockpaperscissorsBackendApplicationTests - Running with Spring Boot v3.1.0, Spring v6.0.9
+1206 [Test worker] INFO  c.c.r.RockpaperscissorsBackendApplicationTests - No active profile set, falling back to 1 default profile: "default"
+7755 [Test worker] INFO  c.c.r.repository.UserRepositoryTest - Starting UserRepositoryTest using Java 17.0.6 with PID 8487 (started by albi29091994 in /home/albi29091994/rockpaperscissors-backend)
+7756 [Test worker] DEBUG c.c.r.repository.UserRepositoryTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+7757 [Test worker] INFO  c.c.r.repository.UserRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+9994 [Test worker] INFO  c.c.r.repository.UserRepositoryTest - Started UserRepositoryTest in 2.288 seconds (process running for 11.052)
+11702 [Test worker] ERROR c.c.r.service.UserService - There already exist a user testUser. Registration process aborted.
+11745 [Test worker] TRACE c.c.r.service.UserService - User testUser successfully created.
+1112 [Test worker] INFO  c.c.r.RockpaperscissorsBackendApplicationTests - Starting RockpaperscissorsBackendApplicationTests using Java 17.0.6 with PID 8988 (started by albi29091994 in /home/albi29091994/rockpaperscissors-backend)
+1113 [Test worker] DEBUG c.c.r.RockpaperscissorsBackendApplicationTests - Running with Spring Boot v3.1.0, Spring v6.0.9
+1115 [Test worker] INFO  c.c.r.RockpaperscissorsBackendApplicationTests - No active profile set, falling back to 1 default profile: "default"
+7914 [Test worker] INFO  c.c.r.repository.UserRepositoryTest - Starting UserRepositoryTest using Java 17.0.6 with PID 8988 (started by albi29091994 in /home/albi29091994/rockpaperscissors-backend)
+7915 [Test worker] DEBUG c.c.r.repository.UserRepositoryTest - Running with Spring Boot v3.1.0, Spring v6.0.9
+7915 [Test worker] INFO  c.c.r.repository.UserRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+10117 [Test worker] INFO  c.c.r.repository.UserRepositoryTest - Started UserRepositoryTest in 2.281 seconds (process running for 11.167)
+11660 [Test worker] ERROR c.c.r.service.UserService - There already exist a user testUser. Registration process aborted.
+11690 [Test worker] TRACE c.c.r.service.UserService - User testUser successfully created.
