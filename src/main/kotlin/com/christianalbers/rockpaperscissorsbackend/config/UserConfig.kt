@@ -19,7 +19,7 @@ class UserConfig {
 
     @Bean
     fun commandLineRunnerUser(repository: UserRepository): CommandLineRunner {
-        return CommandLineRunner { args ->
+        return CommandLineRunner {
             repository.saveAll(listOf(testUser1, testUser2, testUser3, testUser4, testUser5))
         }
     }
